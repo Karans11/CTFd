@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px; margin-bottom: 80px;">
+        <div style="flex: 1; min-width: 300px; max-width: 600px;">
+            <h1 style="font-size: 3rem; font-weight: 800; color: #1F2937; line-height: 1.2; margin-bottom: 20px;">
+                Wiz Cloud Hunters
+            </h1>
+            <p style="font-size: 1.2rem; color: #4B5563; line-height: 1.7; margin-bottom: 30px;">
+                Test your cloud security skills in this Capture The Flag competition. Identify misconfigurations, find vulnerabilities, and prove your expertise in securing cloud environments.
+            </p>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="/register" style="background: #0254EC; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600;">Register</a>
+                <a href="/login" style="background: white; color: #0254EC; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 2px solid #0254EC;">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #F9FAFB; border-radius: 16px; padding: 50px; margin-bottom: 60px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: #1F2937; margin-bottom: 20px;">What is Wiz Cloud Hunters?</h2>
+        <p style="font-size: 1.1rem; color: #4B5563; line-height: 1.8;">
+            Wiz Cloud Hunters is a Capture The Flag competition designed for developers, security engineers, and cloud practitioners. Challenges are based on real-world cloud security scenarios covering AWS, Azure, GCP, Kubernetes, and container security. Solve challenges, submit flags, and compete on the leaderboard.
+        </p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: #1F2937; margin-bottom: 20px;">Protect Everything You Build and Run in the Cloud</h2>
+        <p style="font-size: 1.1rem; color: #4B5563; line-height: 1.8;">
+            Wiz is the Cloud Security Platform that enables security, dev, and devops teams to work together in a self-service model built for the scale and speed of cloud development.
+        </p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: #1F2937; margin-bottom: 30px;">Challenge Categories</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            <div style="background: white; border: 1px solid #E5E7EB; border-radius: 12px; padding: 25px;">
+                <h3 style="color: #0254EC; margin-bottom: 10px;">Cloud Security</h3>
+                <p style="color: #6B7280;">Identify misconfigurations in AWS, Azure, and GCP environments.</p>
+            </div>
+            <div style="background: white; border: 1px solid #E5E7EB; border-radius: 12px; padding: 25px;">
+                <h3 style="color: #0254EC; margin-bottom: 10px;">IAM and Permissions</h3>
+                <p style="color: #6B7280;">Analyze IAM policies and identify privilege escalation paths.</p>
+            </div>
+            <div style="background: white; border: 1px solid #E5E7EB; border-radius: 12px; padding: 25px;">
+                <h3 style="color: #0254EC; margin-bottom: 10px;">Container Security</h3>
+                <p style="color: #6B7280;">Explore Kubernetes security and container escape scenarios.</p>
+            </div>
+            <div style="background: white; border: 1px solid #E5E7EB; border-radius: 12px; padding: 25px;">
+                <h3 style="color: #0254EC; margin-bottom: 10px;">Secrets and Exposure</h3>
+                <p style="color: #6B7280;">Find exposed credentials, API keys, and sensitive data.</p>
+            </div>
+            <div style="background: white; border: 1px solid #E5E7EB; border-radius: 12px; padding: 25px;">
+                <h3 style="color: #0254EC; margin-bottom: 10px;">Compliance</h3>
+                <p style="color: #6B7280;">Map security findings to compliance frameworks.</p>
+            </div>
+            <div style="background: white; border: 1px solid #E5E7EB; border-radius: 12px; padding: 25px;">
+                <h3 style="color: #0254EC; margin-bottom: 10px;">Code Security</h3>
+                <p style="color: #6B7280;">Review infrastructure as code and secure CI/CD pipelines.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #0254EC, #1e3a8a); border-radius: 16px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: white; margin-bottom: 15px;">Ready to Test Your Skills?</h2>
+        <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8); margin-bottom: 25px;">Register now and start hunting cloud vulnerabilities.</p>
+        <a href="/register" style="background: white; color: #0254EC; padding: 14px 40px; border-radius: 8px; text-decoration: none; font-weight: 600;">Get Started</a>
+    </div>
+
+</div>
+{% endblock %}
